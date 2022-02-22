@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='new'>
+<img src="{{ photo.url }}" alt="">
+<hr />
+<form action="" method="POST">
+    {% csrf_token %}
+    <textarea placeholder='{{photo.name}}' name="name"></textarea>
+    <!-- We must always use this tag in our forms -->
+    <input class="btn green" type="submit" value="update">
+</form>
+</div>
+
+{% endblock %}

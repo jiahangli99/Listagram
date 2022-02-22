@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class='home'>
+    <hr />
+    <div>
+        {% for photo in photos %}
+        {% if user.is_authenticated %}
+        <div class='main'>
+            <div class='post'>
+                <p class='name'>{{photo.user}}</p>
+                <img class='postimg' src="{{ photo.url }}" alt="">
+                <p class='content'>{{ photo.name }}</p>
+        </div>
+        </div>
+        {% else %}
+        <div class='main'>
+            <div class='post'>
+                <p class='name'>Log In To See Author</p>
+                <img class='postimg' src="{{ photo.url }}" alt="">
+                <p class='content'>Log In To See Content</p>
+        </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

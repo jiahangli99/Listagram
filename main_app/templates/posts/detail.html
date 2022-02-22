@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div class='new'>
+<div class='postdetail'>
+    <div>
+        <img src="{{ photo.url }}" alt="">
+    </div>
+    <div class='right'>
+        <p class='des'>{{ photo.name }}</p>
+    </div>
+</div>
+<a class='delete' href="{% url 'photo_delete' photo.id %}">Delete</a>
+<a class='edit' href="{% url 'post_update' photo.id %}">Edit</a>
+</div>
+
+
+{% endblock %}

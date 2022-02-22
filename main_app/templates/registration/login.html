@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='loginbody'>
+<div class='login'>
+<h1>Log In</h1>
+
+<form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="hidden" name='next' value='{{next}}'>
+        <input class='loginbutton' type="submit" value="Login">
+        <p class='p'>Not Registered? <a href="/signup">Create an account</a></p>
+        <p> DON'T WANT TO REGISTER? USE USERNAME: <b>test </b> </br>PASSWORD: <b>thisisatest</b> </p>
+</form>
+</div>
+</div>
+
+{% endblock %}

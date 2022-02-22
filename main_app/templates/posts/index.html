@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+<hr />
+<h1 class='myposth1'>{{user}}</h1>
+<hr />
+<div class='mypostcontainer'>
+{% for photo in photos %}
+<a  class='mypost' href="{% url 'detail' photo.id %}">
+<div>
+        <div class="card-content">
+            <img src="{{ photo.url }}" alt="">
+        </div>
+</div>
+</a>
+{% endfor %}
+</div>
+ {% endblock %}

@@ -1,0 +1,167 @@
+body {
+    margin: 0
+}
+.nav {
+    height: 8vh;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+.views {
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+li, img {
+    margin-top: 3vh;
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: larger;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3vh;
+    padding-top:3vh
+
+}
+.post {
+    border: 1px solid black;
+}
+p {
+    padding-left: 1vw;
+}
+.postimg {
+    height: 70vh;
+}
+.home {
+    background: linear-gradient(to top, rgb(255, 225, 225) 0%, rgb(255, 255, 255) 100%);
+}
+.icon {
+    height: 3vh;
+}
+.user {
+    border: 2px solid tan;
+    border-radius: 25vh;
+    height: 4vh;
+    width: 10vw;
+    
+}
+p1{
+    color: rgb(44, 0, 241);
+}
+.name {
+    font-size: x-large;
+    color: rgb(104, 57, 1);
+}
+.content {
+    font-size: larger;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.newimg {
+    height: 45vh;
+    width: 25vw;
+    padding-bottom: 3vh;
+}
+.preview {
+    border: 5px solid black;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-between;
+}
+textarea{
+    resize: none;
+    width: 20vw;
+    height: 32vh;
+
+}
+.new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mypostcontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.myposth1 {
+    text-align: center;
+}
+.postdetail {
+        border: 5px solid black;
+        display: flex;
+        width: 50vw;
+        height: 50vh;
+        align-items: center;
+        justify-content: space-evenly;
+}
+.des {
+    font-size: xx-large;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.delete {
+    color: red;
+    font-size: xx-large;
+}
+.edit {
+    color:blue;
+    font-size: xx-large;
+}
+.buttondelete {
+    background-color: red;
+    font-size: xx-large;
+    height: 5vh;
+    border-radius: 10px;
+}
+.cancel {
+    padding-top: 5vh;
+    color:blue;
+    font-size: xx-large;
+}
+.confirm {
+    text-align: center;
+    padding-bottom: 10vh;
+}
+.login {
+    position: relative;
+    background: white;
+    opacity: 99%;
+    max-width: 300px;
+    margin: 200px auto 100px;
+    padding: 10px 45 px 30px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1), 0 5px 5px 0 rgba(0, 0, 0, 0.5)
+}
+
+.p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.loginbutton:hover {
+	background-color: rgb(136, 136, 230);
+}

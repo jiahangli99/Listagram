@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class='confirm'>Are you sure you want to remove this post ?</h1>
+    <div class='options'>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input class="buttondelete" type="submit" value="Yes - Remove">
+        <a class="cancel" href="{% url 'detail' object.id %}">Cancel</a>
+    </form>
+</div>
+{% endblock %}
